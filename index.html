@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Teas - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body> <!-- tea types: moringa, ginger, lemongrass, zobo (hibiscus), scent leaf, bitter leaf, clove, turmeric  -->
+
+    <main>
+        
+        <header>
+            <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
+            <!-- note to self: remember the nav links will differ on the html files within the 'pages' folder -->
+            <!-- note to self: duplicate to the other pages when you are happy with the look of the homepage's UI -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="cta"><a href="pages/buy.html">Buy Tea</a></li>
+                    <li><a href="pages/story.html">Our Story</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- I could have loaded the header section dynamically using JavaScript like I did for the footer
+         but decided not to do so since its content is less (and thus, more easily updated across all pages)
+         and since using JavaScript would also mean that the header, which is a critical part of the page, and whose
+         content is not repeated within the site, except at the footer, will not show if JavaScript is disabled
+         on the viewer's browser. As a final reason, using JavaScript to dynamically load the header's content
+         can also cause a slight delay in the loading of the header, which would not look good on the site. -->
+
+        <section class="hero">
+            <h1>Drink Exceptional Nigerian Tea</h1>
+            <p>We grow these roots and leaves ourselves in <em>organic</em> farms that don't use pesticides and chemical fetilisers <span>as a rule</span>.</p>
+            <button>Buy Tea</button>
+        </section>
+
+        <section class="why">
+            <h2>Benefits of Buying Tea Locally</h2>
+            <p>Why buy from us? We have some very good reasons outlined below.</p>
+            <!-- use JS -->
+            <!-- fresh and healthy - we get our herbs directly from our fields, dry them thoroughly and get them to you within a week
+            calming feeling - the process of making tea and drinking tea helps to relax the body and the mind
+            tasty beverage - drink our teas separately or combine them into a wonderful mix of flavours for an enarmoring experience
+            unique activity - regular tea drinkers are rare in Nigeria, develop a new habit that is fun *and* has health benefits
+            -->
+        </section>
+
+        <section class="menu">
+            <h2>Our Teas</h2>
+            <p>Our teas come packed with so many benefits that we can't list them all!</p>
+            <!-- use json file to populate this area -->
+            <button>Buy Tea</button>
+        </section>
+
+        <section class="story">
+            <h2>Our Story</h2>
+            <p>Local Teas started as a passion project of its owner, Mrs Idowu Baku. Ever since she was a child growing up in the plains of Plateau state, she has loved tea; its taste, its smell, its calming effect and health benefits.</p>
+            <p>At her home in Kano, she started planting tea ingredients, so she could drink them fresh, just like she used to back home...</p>
+            <!-- Mrs Baku was surprised to find out that the difference between freshly made tea and store-bought ones was so much.
+             Her co-workers started asking how she always had nice smelling tea to work and where she got it from. 
+             Soon, they started to place orders and Mrs Baku found that she had become a tea farmer, right in her home! 
+             That's how Local Teas was born!
+             It's been 12 years since that first experiment and Local Teas has expanded to serving customers within and outside Nigeria.
+             We now have farms all over Nigeria, ensuring that wherever you are, delivery times stay short and your get your fresh tea. 
+             No processing is involved and no chemicals are used. Our teas come straight from the earth, as nature designed it.
+             Isn't that wonderful? -->
+            <button class="normal">Read The Full Story</button>
+        </section>
+
+    </main>
+
+    <!-- Note to self: This footer features different link paths than the variant that will be used for all other visible pages on the site.
+     Thus, it will be updated separately but will always be made to match the footer.js variant (that is located in the 'components' folder) visually. -->
+    <footer id="footer">
+
+        <div>
+            <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
+            <p>Made by Ogechukwu Onuora</p>
+            <!-- social media icons placeholder -->
+            </div>
+        
+            <div>
+                <h3>Site Navigation</h3>
+                <nav>
+                    <ul>
+                        <li>Home (Scroll To Top)</li>
+                        <li>Buy Tea</li>
+                        <li>Our Story</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <div>
+                <h3>Contact</h3>
+                <p>(+234) 000 000 000</p>
+                <p>contact@localteas.com</p>
+            </div>
+        
+    </footer>
+    
+</body>
+</html>
