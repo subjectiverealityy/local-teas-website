@@ -54,9 +54,12 @@ section {
     border: 1px solid black;
     display: grid;
     gap: 30px;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
+}
+
+section.container p {
+    max-width: 800px;
 }
 
 ul {
@@ -119,6 +122,8 @@ button {
     background-color: var(--dark-background-color);
 }
 
+/* home page (index.html) */
+
 /* header */
 
 header {
@@ -176,10 +181,14 @@ button.menu-button {
     }
 }
 
-/* hero */
+/* hero and banner */
 
-.hero {
+.hero, .banner {
+    background-image: url("../images/hero-banner-image.jpg");
+    background-size: cover;
+    background-position: center;
     align-content: center;
+    text-align: center;
 }
 
 /* why */
@@ -271,6 +280,27 @@ footer .container ul {
     display: grid;
     gap: 10px;
 }
+
+/* story page (story.html) */
+
+.gallery .gallery-container {
+    padding: 0;
+}
+
+.gallery .gallery-container img {
+    max-width: 400px;
+    border-radius: 20px;
+    border: 10px solid var(--accent-background-color)
+}
+
+@media (min-width: 900px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
 
 
 
