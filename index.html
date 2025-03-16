@@ -21,7 +21,16 @@
             <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
             <!-- note to self: remember the nav links will differ on the html files within the 'pages' folder -->
             <!-- note to self: duplicate to the other pages when you are happy with the look of the homepage's UI -->
-            <nav>
+            <button class="menu-button">Menu</button>
+            <nav class="mobile-menu light-accent-background dark-text">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="cta"><a href="pages/buy.html">Buy Tea</a></li>
+                    <li><a href="pages/story.html">Our Story</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="other-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="cta"><a href="pages/buy.html">Buy Tea</a></li>
@@ -37,43 +46,68 @@
          on the viewer's browser. As a final reason, using JavaScript to dynamically load the header's content
          can also cause a slight delay in the loading of the header, which would not look good on the site. -->
 
-        <section class="hero">
-            <h1>Drink Exceptional Nigerian Tea</h1>
-            <p>We grow these roots and leaves ourselves in <em>organic</em> farms that don't use pesticides and chemical fetilisers <span>as a rule</span>.</p>
-            <button>Buy Tea</button>
+        <section class="hero dark-background">
+            <div class="container">
+                <h1 class="light-text">Local Teas</h1>
+                <p class="light-text">We grow these roots and leaves ourselves in <em>organic</em> farms that don't use pesticides and chemical fetilisers.</p>
+                <button>Buy Tea</button>
+            </div>
         </section>
 
-        <section class="why">
-            <h2>Benefits of Buying Tea Locally</h2>
-            <p>Why buy from us? We have some very good reasons outlined below.</p>
-            <!-- use JS -->
-            <!-- fresh and healthy - we get our herbs directly from our fields, dry them thoroughly and get them to you within a week
-            calming feeling - the process of making tea and drinking tea helps to relax the body and the mind
-            tasty beverage - drink our teas separately or combine them into a wonderful mix of flavours for an enarmoring experience
-            unique activity - regular tea drinkers are rare in Nigeria, develop a new habit that is fun *and* has health benefits
-            -->
+        <section class="why light-background dark-text">
+            <div class="container">
+                
+                <h2>Benefits of Buying<br>Local Teas</h2>
+                <p>Why buy from us? We have some very good reasons outlined below.</p>
+
+                <div class="container card-container">
+                    <div class="card container light-accent-background">
+                        <h3>Fresh and Healthy</h3>
+                        <p>We get our herbs directly from our fields, dry them thoroughly and get them to you within a week.</p>
+                    </div>
+                    <div class="card container light-accent-background">
+                        <h3>Calming<br>Effect</h3>
+                        <p>The process of making tea and drinking tea helps to relax the body and the mind.</p>
+                    </div>
+                    <div class="card container light-accent-background">
+                        <h3>Tasty<br>Beverage</h3>
+                        <p>Drink our teas separately or combine them to get a delicious and wonderful mix of flavours.</p>
+                    </div>
+                    <div class="card container light-accent-background">
+                        <h3>Unique<br>Activity</h3>
+                        <p>Regular tea drinkers are rare in Nigeria. Develop a new habit that is fun <span class= "italicise">and</span> has health benefits!</p>
+                    </div>
+                </div>    
+
+            </div>
         </section>
 
-        <section class="menu">
-            <h2>Our Teas</h2>
-            <p>Our teas come packed with so many benefits that we can't list them all!</p>
-            <!-- use json file to populate this area -->
-            <button>Buy Tea</button>
+        <section class="menu dark-background light-text">
+            <div class="container">
+                <h2>Our Teas</h2>
+                <p>Our teas are packed with so many benefits that we can't list them all!</p>
+                <div class="container menu-container">
+                    <!-- This area was populated using products.json ('public' folder). -->
+                </div>
+                <button>Buy Tea</button>
+            </div>
         </section>
 
-        <section class="story">
-            <h2>Our Story</h2>
-            <p>Local Teas started as a passion project of its owner, Mrs Idowu Baku. Ever since she was a child growing up in the plains of Plateau state, she has loved tea; its taste, its smell, its calming effect and health benefits.</p>
-            <p>At her home in Kano, she started planting tea ingredients, so she could drink them fresh, just like she used to back home...</p>
-            <!-- Mrs Baku was surprised to find out that the difference between freshly made tea and store-bought ones was so much.
-             Her co-workers started asking how she always had nice smelling tea to work and where she got it from. 
-             Soon, they started to place orders and Mrs Baku found that she had become a tea farmer, right in her home! 
-             That's how Local Teas was born!
-             It's been 12 years since that first experiment and Local Teas has expanded to serving customers within and outside Nigeria.
-             We now have farms all over Nigeria, ensuring that wherever you are, delivery times stay short and your get your fresh tea. 
-             No processing is involved and no chemicals are used. Our teas come straight from the earth, as nature designed it.
-             Isn't that wonderful? -->
-            <button class="normal">Read The Full Story</button>
+        <section class="story light-accent-background dark-text">
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>Local Teas started as a passion project of its owner, Mrs Idowu Baku. Ever since she was a child growing up in the plains of Plateau state, she has loved tea; its taste, its smell, its calming effect and health benefits.</p>
+                <p>At her home in Kano, she started planting tea ingredients, so she could drink them fresh, just like she used to back home...</p>
+                <!-- Mrs Baku was surprised to find out that the difference between freshly made tea and store-bought ones was so much.
+                Her co-workers started asking how she always had nice smelling tea to work and where she got it from. 
+                Soon, they started to place orders and Mrs Baku found that she had become a tea farmer, right in her home! 
+                That's how Local Teas was born!
+                It's been 12 years since that first experiment and Local Teas has expanded to serving customers within and outside Nigeria.
+                We now have farms all over Nigeria, ensuring that wherever you are, delivery times stay short and your get your fresh tea. 
+                No processing is involved and no chemicals are used. Our teas come straight from the earth, as nature designed it.
+                Isn't that wonderful? -->
+                <button class="normal">Read The Full Story</button>
+            </div>
         </section>
 
     </main>
@@ -82,7 +116,8 @@
      Thus, it will be updated separately but will always be made to match the footer.js variant (that is located in the 'components' folder) visually. -->
     <footer id="footer">
 
-        <div>
+        <div class="container">
+            <div>
             <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
             <p>Made by Ogechukwu Onuora</p>
             <!-- social media icons placeholder -->
@@ -105,8 +140,12 @@
                 <p>(+234) 000 000 000</p>
                 <p>contact@localteas.com</p>
             </div>
+        </div>
         
     </footer>
-    
+
+    <script src="js/nav.js"></script>
+    <script src="js/products.js"></script>
+
 </body>
 </html>
