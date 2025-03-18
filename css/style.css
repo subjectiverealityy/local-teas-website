@@ -246,6 +246,7 @@ button.menu-button {
     grid-row: span 2;
     margin-right: 20px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 @media(min-width: 1000px) {
@@ -279,6 +280,92 @@ footer .container > * { /* child combinator (>) */
 footer .container ul {
     display: grid;
     gap: 10px;
+}
+
+/* buy page (buy.html) */
+
+.teas {
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.teas .container {
+    justify-content: center;
+}
+
+.teas > * {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.tea.card {
+    width: 350px;
+    border-radius: 20px;
+    display: grid;
+    gap: 25px;
+    padding: 20px;
+}
+
+.tea.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    justify-self: center;
+    object-fit: cover;
+}
+
+/* cart */
+
+.cart {
+    padding: 0;
+    padding-top: 50px;
+}
+
+.cart-container {
+    flex: 0 0 450px;
+    width: 450px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-background-color);
+    border-radius: inherit;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item-quantity {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cart-item button {
+    background-color: var(--accent-background-color);
+    min-width: 30px;
+    min-height: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.cart-item h3 {
+    font-size: 1.7rem;
+}
+
+@media (min-width: 1300px) {
+    .teas {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cart-container {
+        margin-right: 50px;
+    }
 }
 
 /* story page (story.html) */

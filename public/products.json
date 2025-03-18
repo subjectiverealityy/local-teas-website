@@ -4,55 +4,59 @@
         "name": "Zobo (Hibiscus)",
         "description": "Rich in vitamin C and antioxidants, zobo tea promotes heart health, lowers blood pressure, and supports weight management.",
         "price": 2500,
-        "image": "images/test.jpg"
+        "image": [
+            "images/tea-pictures/zobo-hibiscus.jpg",
+            "../images/tea-pictures/zobo-hibiscus.jpg"
+        ]
     },
     {
         "id": 2,
         "name": "Moringa",
         "description": "Packed with antioxidants and essential nutrients, moringa tea helps boost immunity, improve digestion, and support healthy skin and hair.",
         "price": 3200,
-        "image": "images/test.jpg"
+        "image": [
+            "images/tea-pictures/moringa.jpg",
+            "../images/tea-pictures/moringa.jpg"
+        ]
     },
     {
         "id": 3,
         "name": "Ginger",
         "description": "Known for its anti-inflammatory properties, ginger tea aids digestion, relieves nausea, and helps fight colds and infections.",
-        "price": 3200,
-        "image": "images/test.jpg"
+        "price": 2300,
+        "image": [
+            "images/tea-pictures/ginger.jpg",
+            "../images/tea-pictures/ginger.jpg"
+        ]
     },
     {
         "id": 4,
-        "name": "Lemongrass",
-        "description": "With its refreshing citrus aroma, lemongrass tea supports digestion, reduces stress, and may help lower blood pressure.",
-        "price": 3200,
-        "image": "images/test.jpg"
+        "name": "Tumeric",
+        "description": "With its powerful anti-inflammatory and antioxidant effects, turmeric tea supports joint health, boosts immunity, and aids digestion.",
+        "price": 2700,
+        "image": [
+            "images/tea-pictures/turmeric.jpg",
+            "../images/tea-pictures/turmeric.jpg"
+        ]
     },
     {
         "id": 5,
-        "name": "Tumeric",
-        "description": "With its powerful anti-inflammatory and antioxidant effects, turmeric tea supports joint health, boosts immunity, and aids digestion.",
-        "price": 3200,
-        "image": "images/test.jpg"
+        "name": "Scent Leaf",
+        "description": "Traditionally used for its antibacterial properties, scent leaf tea aids respiratory health, digestion, and helps manage blood sugar levels.",
+        "price": 2500,
+        "image": [
+            "images/tea-pictures/scent-leaf.jpg",
+            "../images/tea-pictures/scent-leaf.jpg"
+        ]
     },
     {
         "id": 6,
-        "name": "Scent Leaf",
-        "description": "Traditionally used for its antibacterial properties, scent leaf tea aids respiratory health, digestion, and helps manage blood sugar levels.",
-        "price": 3200,
-        "image": "images/test.jpg"
-    },
-    {
-        "id": 7,
         "name": "Clove",
         "description": "Known for its strong antibacterial and pain-relieving properties, clove tea helps with oral health, digestion, and inflammation.",
         "price": 3200,
-        "image": "images/test.jpg"
-    },
-    {
-        "id": 8,
-        "name": "Bitterleaf",
-        "description": "Bitter but beneficial, this tea helps detoxify the body, supports liver health, and improves digestion.",
-        "price": 3200,
-        "image": "images/test.jpg"
+        "image": [
+            "images/tea-pictures/clove.jpg",
+            "../images/tea-pictures/clove.jpg"
+        ]
     }
 ]
