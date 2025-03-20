@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body> <!-- tea types: moringa, ginger, lemongrass, zobo (hibiscus), scent leaf, bitter leaf, clove, turmeric  -->
+<body> 
 
     <main>
         
-        <header>
+        <header class="header light-accent-background">
+
             <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
-            <!-- note to self: remember the nav links will differ on the html files within the 'pages' folder -->
-            <!-- note to self: duplicate to the other pages when you are happy with the look of the homepage's UI -->
+
             <button class="menu-button">Menu</button>
+
             <nav class="mobile-menu light-accent-background dark-text">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,7 +31,8 @@
                     <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <nav class="other-menu">
+
+            <nav class="other-menu dark-text">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="cta"><a href="pages/buy.html">Buy Tea</a></li>
@@ -38,26 +40,21 @@
                     <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
+
         </header>
-        <!-- I could have loaded the header section dynamically using JavaScript like I did for the footer
-         but decided not to do so since its content is less (and thus, more easily updated across all pages)
-         and since using JavaScript would also mean that the header, which is a critical part of the page, and whose
-         content is not repeated within the site, except at the footer, will not show if JavaScript is disabled
-         on the viewer's browser. As a final reason, using JavaScript to dynamically load the header's content
-         can also cause a slight delay in the loading of the header, which would not look good on the site. -->
 
         <section class="hero dark-background">
             <div class="container">
                 <h1 class="light-text">Local Teas</h1>
                 <p class="light-text">We grow these roots and leaves ourselves in <em>organic</em> farms that don't use pesticides and chemical fetilisers.</p>
-                <button>Buy Tea</button>
+                <button class="cta"><a href="pages/buy.html">Buy Tea</a></button>
             </div>
         </section>
 
         <section class="why light-background dark-text">
             <div class="container">
                 
-                <h2>Benefits of Buying<br>Local Teas</h2>
+                <h2>Benefits of Buying<br><span class="italicise">Local Teas</span></h2>
                 <p>Why buy from us? We have some very good reasons outlined below.</p>
 
                 <div class="container card-container">
@@ -89,7 +86,7 @@
                 <div class="container menu-container">
                     <!-- This area was populated using products.json ('public' folder). -->
                 </div>
-                <button>Buy Tea</button>
+                <button class="cta"><a href="pages/buy.html">Buy Tea</a></button>
             </div>
         </section>
 
@@ -106,7 +103,7 @@
                 We now have farms all over Nigeria, ensuring that wherever you are, delivery times stay short and your get your tea fresh. 
                 No processing is involved and no chemicals are used. Our teas come straight from the earth, as nature designed it.
                 Isn't that wonderful? -->
-                <button class="normal">Read The Full Story</button>
+                <button class="normal"><a href="pages/story.html">Read The Full Story</a></button>
             </div>
         </section>
 
@@ -114,23 +111,22 @@
 
     <!-- Note to self: This footer features different link paths than the variant that will be used for all other visible pages on the site.
      Thus, it will be updated separately but will always be made to match the footer.js variant (that is located in the 'components' folder) visually. -->
-    <footer id="footer">
+    <footer class="footer">
 
-        <div class="container">
+        <div class="container light-text">
             <div>
-            <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
-            <p>Made by<br>Ogechukwu Onuora</p>
-            <!-- social media icons placeholder -->
+                <div class="logo"><img src="logo.png" alt="Local Teas Logo"></div>
+                <p>Made by<br>Ogechukwu Onuora</p>
             </div>
         
             <div>
                 <h3>Site Navigation</h3>
                 <nav>
                     <ul>
-                        <li>Home (Scroll To Top)</li>
-                        <li>Buy Tea</li>
-                        <li>Our Story</li>
-                        <li>Contact</li>
+                        <li><a href="index.html">(Scroll To Top)</a></li>
+                        <li class="cta"><a href="pages/buy.html">Buy Tea</a></li>
+                        <li><a href="pages/story.html">Our Story</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -144,7 +140,7 @@
         
     </footer>
 
-    <script src="js/nav.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/products.js"></script>
 
 </body>

@@ -37,7 +37,7 @@ fetch(jsonFile)
     })   
 });
 
-let cart = JSON.parse(localStorage.getItem("cart")) || []; // not useful yet, i'm just adding this so i don't forget to complete task of local storage
+let cart = JSON.parse(localStorage.getItem("cart")) || []; 
 updateCart();
 
 document.addEventListener('click', (event) => {
@@ -81,7 +81,7 @@ function updateCart() {
 
     if(cart.length > 0) {
         cartContainer.innerHTML += `
-        <h2 class="dark-text">Your Cart</h2>'
+        <h2 class="dark-text">Your Cart</h2>
         `
     }
 

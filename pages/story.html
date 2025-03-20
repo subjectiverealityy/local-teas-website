@@ -16,6 +16,10 @@
 
     <main>
 
+        <header class="header light-accent-background">
+            <!-- header loaded dynamically via Javascript (header.js) from header.html ('components' folder) -->
+        </header>
+
         <section class="banner light-text">
             <h1>Our Story</h1>
         </section>
@@ -39,7 +43,7 @@
             <p>
                 No processing is involved and no chemicals are used. Our teas come straight from the earth, as nature designed it. Isn't that wonderful?
             </p>
-            <button>Buy Tea</button>
+            <button class="cta"><a href="buy.html">Buy Tea</a></button>
         </section>
 
         <section class="gallery container light-accent-background dark-text">
@@ -55,11 +59,12 @@
 
     </main>
 
-    <footer id="footer">
-        <!-- footer content fetched from footer.html ('components' folder) via JavaScript -->
+    <footer class="footer">
+        <!-- footer loaded dynamically via Javascript (footer.js) from footer.html ('components' folder) -->
     </footer>
 
-    <script src="js/footer.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
     
 </body>
 </html>

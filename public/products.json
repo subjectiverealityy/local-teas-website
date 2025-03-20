@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Zobo (Hibiscus)",
-        "description": "Rich in vitamin C and antioxidants, zobo tea promotes heart health, lowers blood pressure, and supports weight management.",
+        "name": "Zobo",
+        "description": "Rich in vitamin C and antioxidants, zobo (or hibiscus) tea promotes heart health, lowers blood pressure, and supports weight management.",
         "price": 2500,
         "image": [
             "images/tea-pictures/zobo-hibiscus.jpg",

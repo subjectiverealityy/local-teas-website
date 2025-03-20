@@ -16,6 +16,10 @@
 
     <main>
 
+        <header class="header light-accent-background">
+            <!-- header loaded dynamically via Javascript (header.js) from header.html ('components' folder) -->
+        </header>
+
         <section class="banner light-text">
             <h1>Our Teas</h1>
         </section>
@@ -23,33 +27,23 @@
 
         <section class="teas dark-background">
             <div class="container product-list">
-                <!-- The content here is loaded from products.json ('public' folder)-->
+                <!-- The content here is loaded dynamically from products.json ('public' folder) -->
             </div>
-            <aside class="cart container"> <!-- add local storage so the cart remembers after refreshing -->
+            <aside class="cart container">
                 <div class="cart-container light-accent-background">
                     <h2 class="dark-text">Click on an Item to Add It To The Cart</h2>
-
-                    <div class="cart-item" data-product-id="1">
-                        <h3 class="cart-item-name dark-text">Zobo</h3>
-                        <div class="cart-item-quantity">
-                            <button class="cart-item-decrease" aria-label="Decrease Quantity">−</button>
-                            <span class="cart-item-amount">x1</span>
-                            <button class="cart-item-increase" aria-label="Increase Quantity">+</button>
-                        </div>
-                        <p class="cart-item-price">N2500</p>
-                        <button class="cart-item-remove" aria-label="Remove From Cart">×</button>
-                    </div>
-                    
+                    <!-- The content here is loaded dynamically from products.json ('public' folder) -->                   
                 </div>
             </aside>
         </section>
 
     </main>
 
-    <footer id="footer">
-        <!-- footer content fetched from footer.html ('components' folder) via JavaScript -->
+    <footer class="footer">
+        <!-- footer loaded dynamically via Javascript (footer.js) from footer.html ('components' folder) -->
     </footer>
 
+    <script src="../js/header.js"></script>
     <script src="../js/products.js"></script>
     <script src="../js/footer.js"></script>
 

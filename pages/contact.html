@@ -10,29 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <main>
 
+        <header class="header light-accent-background">
+            <!-- header loaded dynamically via Javascript (header.js) from header.html ('components' folder) -->
+        </header>
+
         <section class="banner">
-            <h1>Get In Touch With Us</h1>
+            <h1 class="light-text">Get In Touch With Us</h1>
         </section>
 
-        <section class="contact-content">
-            <h2>Contact Details</h2>
-            <p>Click the email address to copy it - <span>contact@localtea.com</span>. You can also send us a message via the form below. Or call us at (+234) 000 000 000.</p>
-            <!-- form placeholder -->
+        <section class="contact-content container light-accent-background">
+            <h2 class = "accent-text">Contact Details</h2>
+            <p class="dark-text">Send an email to contact@localtea.com</p>
+            <p class="dark-text"> Or call us at (+234) 000 000 000</p>
+            <p class="dark-text">You can also send us a message via the form below.</p>
+
+            <form class="contact-form"> 
+
+                <input class="form-field" type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+                <input class="form-field" type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+            
+                <div class="number-selection">
+                    <label>
+                        <input type="radio" name="number" id="nigerian-number" value="nigerian-number" checked> Nigerian Number
+                    </label>
+                    <label>
+                        <input type="radio" name="number" id="foreign-number" value="foreign-number"> Non-Nigerian Number
+                    </label>
+                </div>
+            
+                <input class="form-field" type="tel" id="number" name="number" placeholder="Enter your number" autocomplete="tel">
+            
+                <textarea class="form-field" id="message" name="message" placeholder="Enter your message"></textarea>
+            
+                <textarea class="form-field" id="alternate-contact" name="alternate-contact" placeholder="How else can we contact you? Include points of contact that you use often even if it has been stated earlier"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <button class="cta"><a href="buy.html">Buy Tea</a></button>
+            
         </section>
 
     </main>
 
-    <footer id="footer">
-        <!-- footer content fetched from footer.html ('components' folder) via JavaScript -->
+    <footer class="footer">
+        <!-- footer loaded dynamically via Javascript (footer.js) from footer.html ('components' folder) -->
     </footer>
 
-    <script src="js/footer.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
     
 </body>
 </html>
