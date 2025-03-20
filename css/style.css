@@ -167,6 +167,7 @@ header li {
     width: 150px;
     height: 60px;
     background-color: var(--light-background-color);
+    justify-self: center;
 }
 
 button.menu-button {
@@ -340,6 +341,7 @@ footer .container ul {
     display: grid;
     gap: 25px;
     padding: 20px;
+    cursor: pointer;
 }
 
 .tea.card img {
@@ -359,7 +361,7 @@ footer .container ul {
 
 .cart-container {
     flex: 0 0 420px;
-    width: 450px;
+    width: 420px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -377,7 +379,6 @@ footer .container ul {
 .cart-item-quantity {
     display: flex;
     gap: 10px;
-    align-items: center;
 }
 
 .cart-item button {
@@ -392,6 +393,10 @@ footer .container ul {
     font-size: 1.7rem;
 }
 
+.cart-container h2 {
+    font-size: 2.9rem;
+}
+
 @media (min-width: 900px) {
     .teas {
         flex-direction: row;
@@ -399,11 +404,36 @@ footer .container ul {
     }
 
     .cart-container {
-        flex-basis: a;
+        margin-right: 20px;;
+    }
+}
+
+@media (max-width: 600px) {
+    .cart-container {
+        flex: 0 0 340px;
+        font-size: 1rem;
     }
 
-    .cart-container {
-        margin-right: 20px;;
+    .cart-item h3 {
+        text-wrap: nowrap;
+    }
+
+    .cart-item p {
+        font-size: 1.1rem;
+    }
+
+    .cart-item-quantity {
+        gap: 3px;
+    }
+
+    .cart-item button {
+        min-width: 22px;
+        min-height: 22px;
+        height: 22px;
+    }
+
+    .tea.card {
+        width: 340px;
     }
 }
 
