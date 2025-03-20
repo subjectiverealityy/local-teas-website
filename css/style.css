@@ -44,14 +44,12 @@ p.small {
 
 section {
     min-height: 500px;
-    border: 1px solid black;
 }
 
 .container {
     align-content: center;
     justify-items: center;
     text-align: center;
-    border: 1px solid black;
     display: grid;
     gap: 30px;
     margin: 0 auto;
@@ -166,7 +164,7 @@ header li {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     height: 60px;
     background-color: var(--light-background-color);
 }
