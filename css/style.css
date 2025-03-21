@@ -365,8 +365,6 @@ footer .container ul {
 }
 
 .cart-container {
-/*    flex: 0 0 420px;
-    max-width: 420px; */
     border-radius: 20px;
     padding: 20px;
 }
@@ -466,7 +464,7 @@ footer .container ul {
 
 @media (max-width: 700px) {
     .gallery-container img {
-        width: 350px;
+        width: 300px;
     }
 }
 
