@@ -367,6 +367,7 @@ footer .container ul {
 .cart-container {
     border-radius: 20px;
     padding: 20px;
+    max-width: 400px;
 }
 
 .cart-item {
@@ -409,14 +410,14 @@ footer .container ul {
 
     .cart-container {
         margin-right: 50px;
+        width: 400px;
     }
 }
 
 @media (max-width: 600px) {
     .cart-container {
-        padding: 20px;
         font-size: 1rem;
-        max-width: 98%;
+        max-width: 100%;
     }
 
     .cart-item {
