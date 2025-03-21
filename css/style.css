@@ -341,7 +341,7 @@ footer .container ul {
 }
 
 .tea.card {
-    width: 350px;
+    max-width: 350px;
     border-radius: 20px;
     display: grid;
     gap: 25px;
@@ -410,7 +410,7 @@ footer .container ul {
     }
 
     .cart-container {
-        margin-right: 40px;
+        margin-right: 50px;
     }
 }
 
@@ -418,7 +418,7 @@ footer .container ul {
     .cart-container {
         padding: 20px;
         font-size: 1rem;
-        max-width: 350px;
+        max-width: 98%;
     }
 
     .cart-item {
@@ -441,10 +441,6 @@ footer .container ul {
         min-width: 22px;
         min-height: 22px;
         height: 22px;
-    }
-
-    .tea.card {
-        width: 340px;
     }
 }
 
