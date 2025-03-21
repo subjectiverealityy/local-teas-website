@@ -514,6 +514,14 @@ textarea {
     margin-bottom: 20px;
 }
 
+@media (max-width: 800px) {
+    .form-field {
+        min-width: 0px;
+        width: 95%;
+        background-color: #3f250f;
+    }
+}
+
 
 
 
