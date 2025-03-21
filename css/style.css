@@ -517,8 +517,11 @@ textarea {
 @media (max-width: 800px) {
     .form-field {
         min-width: 0px;
-        width: 95%;
-        background-color: #3f250f;
+        max-width: 90%;
+    }
+
+    .number-selection {
+        max-width: 90%;
     }
 }
 
