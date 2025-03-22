@@ -7,4 +7,4 @@ https://localteas.netlify.app/
 https://offee.dcms.site/
 
 ### Note
-The rectangular div in the header is a placeholder for a logo image. The div's image tag links to an image that is not present within the project and thus, no image is shown. This is intentional as I have not created a logo for the website so there is no logo image. The div is a placeholder that works like a logo image would and links back to the homepage when clicked.
+The rectangular div in the header is a placeholder for a logo image. It links back to the homepage when clicked. The image tag of the div has a source file path that does not exist in the project. This is intentional, as I have not created a custom logo for the website. The div is meant to serve as a placeholder and function as a logo image would.
