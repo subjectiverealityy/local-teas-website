@@ -170,9 +170,13 @@ header li {
 
 .logo {
     width: 150px;
+    width: fit-content;
     height: 60px;
-    background-color: var(--light-background-color);
     justify-self: center;
+}
+
+.logo img {
+    max-height: 100%;
 }
 
 button.menu-button {
